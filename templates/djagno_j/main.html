@@ -1,0 +1,65 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+        <div class="container">
+            <div class="input-container">
+                <label for="endTime">Enter time (~ 60 mins) : </label>
+                <input type="number" id="endTime" min="1" value="60" style="width: 60px; text-align:right"
+                onfocus="this.value=''; moveCursorToEnd(this)" oninput="limitInputLength(this, 2)">                 
+            </div>
+            <div class="button-container">
+                <button id="control" class="control"><i class="fas fa-pause"></i></button>
+            
+                <button id="reset" class="reset"><i class="fas fa-redo"></i></button>
+   
+                <button id="alarm" class="alarm"><i class="fas fa-bell"></i></button>
+            </div>
+        </div>
+
+        <div class="timer-container">
+            <div id="timer" class="timer">
+                <div class="cover1"></div>
+                <div id="lines">
+                </div>
+                <div id="fins">
+                </div>
+                <div id="num-container">
+                </div>
+                <audio id="EndAlarm" src="{% static 'music/end_alarm.mp3' %}" preload="auto"></audio>
+
+                <div class="cover2">
+                </div>
+            </div>
+        </div>
+
+        <div class="time-container">
+            <div id="remain-time" class="remain-time"></div>
+            <!-- <div id="total-time" class="total-time"></div> -->
+        </div>
+
+        
+
+    
+    <script src="{% static 'js/index.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+</html>

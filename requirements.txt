@@ -1,0 +1,26 @@
+awsebcli==3.20.10
+blessed==1.20.0
+botocore==1.31.69
+cement==2.8.2
+certifi @ file:///private/tmp/python-certifi-20231008-5561-13s00fm/certifi-2023.7.22
+cffi @ file:///private/tmp/cffi-20231014-5567-1hyue8f/cffi-1.16.0
+charset-normalizer==3.3.1
+colorama==0.4.3
+cryptography @ file:///private/tmp/python-cryptography-20231016-6508-1s2r8nh/cryptography-41.0.4
+distlib==0.3.7
+filelock==3.12.4
+idna==3.4
+jmespath==1.0.1
+packaging @ file:///private/tmp/python-packaging-20231018-5368-zv724j/packaging-23.2
+pathspec==0.10.1
+platformdirs==3.11.0
+pycparser @ file:///private/tmp/pycparser-20231013-5787-1anpge2/pycparser-2.21
+python-dateutil==2.8.2
+PyYAML==6.0.1
+requests==2.31.0
+semantic-version==2.8.5
+six==1.16.0
+termcolor==1.1.0
+urllib3==1.26.18
+virtualenv==20.24.6
+wcwidth==0.1.9
